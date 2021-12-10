@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Organise your Folders - System Sort">
+    <meta name="keywords" content="organisation, sort, folder, classify">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="src/kw.ico">
+    <title>KW - System Sort</title>
+  </head>
+  <body>
+    <div>
+      <div class="lines">
+        <div class="blueLine1">
+        </div>
+        <div class="blueLine2">
+        </div>
+        <div id="blueLine3">
+        </div>
+      </div>
+    </div>
+    <div class="upperDivSite">
+      <div class="navDiv">
+        <div class="navBar dropdown">
+          <a href="#" class="activPage hoverActivPage">
+            System Sort
+          </a>
+          <div class="dropdown-systemSort">
+            <a href="change-log/change-log.html" class="hover">
+              Change Log
+            </a>
+          </div>
+        </div>
+        <div class="navBar">
+          <a href="https://teespring.com/stores/kw-17" class="hover">
+            Clothing
+          </a>
+        </div>
+      </div>
+      <div id="buttonDiv">
+        <h1>System Sort<br>
+          <s>new product V1.1.0</s>
+        </h1>
+        <br>
+        <a href="php/download.php" class="button" id = "noSelection">
+           Download
+        </a>
+        <h2>only 15 left... be quick!</h2>
+      </div>
+      <div class="download-guide">
+        <div class="guideCard" id="guideCardOne">
+          <p>STEP 1</p>
+          <p class="guideCardHead" >Download</p>
+          <p>
+            Open SystemSortSetup.exe in the Downloadlist.
+          </p>
+          <div class="setupPicture">
+          </div>
+        </div>
+        <div class="guideCard" id="guideCardTwo">
+          <p>STEP 2</p>
+          <p class="guideCardHead" >Skip</p>
+          <p>
+            When prompted, click Run Anyway and Yes.
+          </p>
+          <div class="warningPicture">
+          </div>
+        </div>
+        <div class="guideCard" id="guideCardThree">
+          <p>STEP 3</p>
+          <p class="guideCardHead" >Install</p>
+          <p>
+            Click trough the install guide and you are ready!
+          </p>
+          <div class="installPicture">
+          </div>
+        </div>
+      </div>
+      <div class="newsLetter">
+        <form id = "formNewsletter" action="php/mail.php" method="post">
+          <div class="form-group">
+            <p>Join the newsletter!</p>
+            <input type="text" id = "eMail" name="eMail" value="" placeholder="example@example.com" required>
+            <button type="submit"> Submit </button>
+          </div>
+        </form>
+      </div>
+      <div class="paragraph2">
+          <p><b>The Product</b> <br><br>
+              Use our new product to change your life! <br>
+              Use it to be more productive in your life, <br>
+              so you can <em>change</em> the WORLD. <br> <br>
+              Just drop your files in the window and let the <br>
+              programm do it´s thing! <br><br>
+              Open your folders with the new search feature.<br>
+              Be always aware where your folders are and <br>
+              NEVER waist time again &lt;3. <br><br>
+              Click <a href="#buttonDiv">download</a> and experience the future. <br>
+          </p>
+
+      </div>
+      <div class="paragraph2">
+        <img src="src/system sort - showcase/sort.png" alt="folder organisation programm screenshot - create folder page">
+        <img src="src/system sort - showcase/search.png" alt="folder organisation programm screenshot - search folder page">
+        <img src="src/system sort - showcase/config.png" alt="folder organisation programm screenshot - configuration page">
+      </div>
+      <div class="feedback">
+        <h1>Feedback</h1>
+        <form class="feedbackForm" action="php/feedback.php" method="post">
+          <input name="name" type="text" placeholder="Your Name">
+          <input name="mail" type="text" placeholder="example@example.com" required>
+          <textarea name="feedback" rows="12" cols="80" placeholder="tell us about your opinion" required></textarea>
+          <button type="submit" name="button"> Submit</button>
+        </form>
+      </div>
+      <div class="footer">
+        <div class="contactMail">
+            <h1>Contact info:</h1>
+            <a href="mailto: info@kw-corp.de">info@kw-corp.de</a>
+        </div>
+        <div class="">
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
