@@ -173,7 +173,7 @@ a{
   top:12.5%;
   left: 19.975%; */
   margin-top: 2.5%;
-  width: 60%;
+  width: 80%;
   height: 50%;
   display: flex;
   flex-wrap: nowrap;
@@ -443,7 +443,7 @@ button:hover{
 .feedback{
   text-align: center;
   padding-bottom: 5vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -498,103 +498,4 @@ textarea{
   font-size: 150%;
   text-align: left;
   color: white;
-}
-
-@media all and (max-width: 1200px) {
-  h1{
-    font-size: 200%;
-  }
-  a{
-    font-size: 200%;
-  }
-  .newsLetter{
-    width: 80%;
-  }
-  .paragraph2{
-    flex-direction: column;
-    align-items: center;
-  }
-  .paragraph2 > p{
-    text-align: center;
-    margin: 3vh;
-  }
-  .paragraph2 > p > b{
-    border-right: none;
-  }
-  .paragraph2 > img{
-    width: 25vh;
-    height: auto;
-  }
-  .navDiv{
-    flex-direction: column;
-    align-items: center;
-  }
-  .navDiv > div{
-    margin: 1vh;
-  }
-  .navDiv > div > a{
-    font-size: 200%;
-  }
-  .kw-corp-logo{
-    background-image: none;
-    background-repeat: no-repeat;
-    z-index: 1;
-    height: 12vh;
-    width: 12vw;
-    justify-content: center;
-  }
-  input, textarea{
-    font-size: 150%;
-    height: 5%;
-    width: 80%;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-    border-style: none;
-    text-align: left;
-    margin: 0.1vh;
-    outline: none;
-    font-family: gotham_htfbook;
-  }
-  button{
-    font-size: 150%;
-    height: 10%;
-    width: 80%;
-    padding: 1vh;
-    margin-top: 0.5vh;
-    margin-bottom: 1vh;
-    background-color: white;
-    border-width: 0;
-    border-radius: 10px;
-    color: white;
-    background-color: var(--secColor);
-    user-select: none;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
-  }
-  .lines{
-    position: absolute;
-    left: -0.025%;
-    width: 100%;
-    height: 100%;
-    z-index: -5;
-    overflow: hidden;
-  }
-  .feedback > h1{
-    font-size: 250%;
-
-  }
-  .feedbackForm{
-    width: 60%;
-    background-color: var(--mainColor2);
-    padding: 5vh;
-    border-radius: 5px;
-    box-shadow: 10px 10px 0px rgba(29, 29, 27, 0.1);
-  }
-  .feedbackForm > input, .feedbackForm > textarea, .feedbackForm > button{
-    width: 100%;
-  }
-  .footer{
-    padding-top: 5%;
-    padding-bottom: 5%;
-  }
 }

@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'gotham_blackregular';
+    src: url('../font/gotham_black_regular-webfont.woff2') format('woff2'),
+         url('../font/gotham_black_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'gotham_htfbook';
+  src: url('../font/gothamhtf-book-webfont.woff2') format('woff2'),
+       url('../font/gothamhtf-book-webfont.woff') format('woff');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+:root{
+    --secColor: #1d1d1d;
+    --mainColor: #59a1d9;
+    --accentColor: #ea498b;
+    --mainColor2: #a2d7e5;
+    --mainColorrgba: rgba(89, 161, 217, 1);
+    --accentColorrgba : rgba(234, 73, 139, 0.8);
+    --darksec: #5584c3;
+}
+
+@media all and (max-width: 1200px) {
+  h1{
+    font-size: 900%;
+  }
+  #buttonDiv{
+    margin-top: 5%;
+  }
+  .button{
+    font-size: 500%;
+    padding: 5%;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    border-radius: 75px;
+  }
+  #buttonDiv > h2{
+    font-size: 200%;
+  }
+  a{
+    font-size: 500%;
+  }
+  .download-guide{
+    display: none;
+  }
+  .newsLetter{
+    width: 100%;
+    height: 17.5vh;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .form-group > input, .form-group > button{
+    width: 90%;
+    font-size: 150%;
+  }
+  .form-group > p{
+    font-size: 250%;
+  }
+  .paragraph2{
+    flex-direction: column;
+    align-items: center;
+  }
+  .paragraph2 > p{
+    font-size: 250%;
+    text-align: center;
+    margin: 3vh;
+  }
+  .paragraph2 > p > b{
+    border-right: none;
+  }
+  .paragraph2 > img{
+    width: 25vh;
+    height: auto;
+  }
+  /* .navDiv{
+    flex-direction: column;
+    align-items: center;
+  } */
+  .navDiv > div{
+    margin: 1vh;
+  }
+  .navDiv > div > a{
+    font-size: 400%;
+  }
+  .kw-corp-logo{
+    background-image: none;
+    background-repeat: no-repeat;
+    z-index: 1;
+    height: 12vh;
+    width: 12vw;
+    justify-content: center;
+  }
+  .lines{
+    position: absolute;
+    left: -0.025%;
+    width: 100%;
+    height: 100%;
+    z-index: -5;
+    overflow: hidden;
+  }
+  .feedback{
+    width: 100%;
+    border:solid black 5px;
+  }
+  .feedback > h1{
+    font-size: 750%;
+  }
+  .feedbackForm{
+    border: solid black 5px;
+    width: 75%;
+    background-color: var(--mainColor2);
+    border-radius: 0px;
+    box-shadow: none;
+  }
+  .feedbackForm > input, .feedbackForm > textarea, .feedbackForm > button{
+    width: 100%;
+    font-size: 150%;
+    height: 10%;
+  }
+  .footer{
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+}
