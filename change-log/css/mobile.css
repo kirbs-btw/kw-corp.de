@@ -1,48 +1,9 @@
-@font-face {
-    font-family: 'gotham_blackregular';
-    src: url('../../font/gotham_black_regular-webfont.woff2') format('woff2'),
-         url('../../font/gotham_black_regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-  font-family: 'gotham_htfbook';
-  src: url('../../font/gothamhtf-book-webfont.woff2') format('woff2'),
-       url('../../font/gothamhtf-book-webfont.woff') format('woff');
-  font-weight: lighter;
-  font-style: normal;
-}
-
-::selection{
-  background: var(--accentColor);
-  color: white;
-}
-
-:root{
-    --secColor: #1d1d1d;
-    --mainColor: #59a1d9;
-    --accentColor: #ea498b;
-    --mainColor2: #a2d7e5;
-    --mainColorrgba: rgba(89, 161, 217, 1);
-    --accentColorrgba : rgba(234, 73, 139, 0.8);
-    --darksec: #5584c3;
-}
-
-body{
-  font-family: gotham_blackregular;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-@media all and (min-width: 1200px) {
+@media all and (max-width: 1200px) {
   .navDiv > div{
     padding: 2.5%;
     padding-left: 4%;
     padding-right: 4%;
   }
-
 
   .navDiv{
     display: flex;
@@ -117,6 +78,9 @@ body{
   }
 
   .log{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     margin:2.5%;
     width: 40%;
   }
@@ -142,5 +106,34 @@ body{
     font-size: 150%;
     text-align: left;
     color: white;
+  }
+
+  .navDiv{
+    flex-direction: column;
+    align-items: center;
+  }
+  .navDiv > div{
+    margin: 1vh;
+  }
+  .navDiv > div > a{
+    font-size: 400%;
+  }
+  .dropdown-systemSort {
+    text-align: center;
+  }
+  .log{
+    margin:2.5%;
+    width: 80%;
+  }
+  .log > h1{
+    font-size: 250%;
+  }
+
+  .log > p{
+    font-size: 120%;
+  }
+  .footer{
+    padding-top: 5%;
+    padding-bottom: 5%;
   }
 }
