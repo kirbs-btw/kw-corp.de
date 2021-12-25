@@ -127,7 +127,7 @@ body{
     background-color: white;
     border-bottom: var(--accentColor) solid 5px;
     -webkit-transition: 0.2s;
-    
+
   }
 
 
@@ -276,7 +276,7 @@ body{
   }
 
   .setupPicture{
-    width: 100%;
+    width: 75%;
     height: 75%;
     background-image: url("../src/setup.png");
     background-repeat: no-repeat;
@@ -285,7 +285,7 @@ body{
   }
 
   .installPicture{
-    width: 100%;
+    width: 75%;
     height: 75%;
     background-image: url("../src/install.png");
     background-repeat: no-repeat;
