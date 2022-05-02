@@ -1,15 +1,15 @@
 @font-face {
     font-family: 'gotham_blackregular';
-    src: url('../font/gotham_black_regular-webfont.woff2') format('woff2'),
-         url('../font/gotham_black_regular-webfont.woff') format('woff');
+    src: url('../../font/gotham_black_regular-webfont.woff2') format('woff2'),
+         url('../../font/gotham_black_regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
   font-family: 'gotham_htfbook';
-  src: url('../font/gothamhtf-book-webfont.woff2') format('woff2'),
-       url('../font/gothamhtf-book-webfont.woff') format('woff');
+  src: url('../../font/gothamhtf-book-webfont.woff2') format('woff2'),
+       url('../../font/gothamhtf-book-webfont.woff') format('woff');
   font-weight: lighter;
   font-style: normal;
 }
@@ -34,89 +34,24 @@
   border-color: var(--mainColor);
   border-style: solid;
   outline: none;
-  -webkit-transition: 0.2s;
+  -webkit-transition: 0.5s;
   transition: 0.2s;
 }
 
 body{
   font-family: gotham_blackregular;
-  overflow-x: hidden;
-  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 @media all and (min-width: 1200px) {
-  .kw-corp-logo{
-    background-image: url("../src/kw.svg");
-    background-repeat: no-repeat;
-    z-index: 1;
-    height: 12vh;
-    width: 12vw;
-    left: 1.5%;
-    justify-content: center;
-  }
-
-  .placeholder{
-    height: 12vh;
-    width: 12vw;
-  }
-
-  .magentaLine{
-    background-color: var(--accentColor);
-    height: 0.5%;
-    width: 100.25%;
-    position: absolute;
-    left: -0.25%;
-    top: 12%;
-    z-index: -1;
-  }
-
-  .lines{
-    position: absolute;
-    left: -0.025%;
-    width: 100%;
-    height: 200%;
-    z-index: -5;
-    overflow: hidden;
-  }
-
-  .blueLine1, .blueLine2{
-    background-color: var(--mainColor);
-    height: 10%;
-    width: 200%;
-    position: absolute;
-    z-index: -3;
-    transform: rotate(-0.175turn);
-    box-shadow: 15px 15px 0px rgba(29, 29, 27, 0.1);
-  }
-
-  .blueLine1{
-    top: 5%;
-    left: -95%;
-  }
-
-  .blueLine2{
-    top: 5%;
-    left: -70%;
-    z-index: -2;
-  }
-
-  #blueLine3{
-    background-color: var(--mainColor2);
-    height: 80%;
-    width: 200%;
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    z-index: -3;
-    transform: rotate(-0.175turn);
-  }
-
   .navDiv > div{
     padding: 2.5%;
     padding-left: 4%;
     padding-right: 4%;
   }
-
 
   .navDiv{
     display: flex;
@@ -127,9 +62,7 @@ body{
     background-color: white;
     border-bottom: var(--accentColor) solid 5px;
     -webkit-transition: 0.2s;
-
   }
-
 
   a{
     font-size: 300%;
@@ -164,323 +97,82 @@ body{
 
   .dropdown:hover .dropdown-systemSort {
     display: block;
+    -webkit-transition: 0.2s;
   }
 
   .hover:hover {
     color: var(--accentColor);
   }
 
-  #buttonDiv{
-    /* position: absolute;
-    top:12.5%;
-    left: 19.975%; */
-    margin-top: 2.5%;
-    width: 80%;
-    height: 50%;
+  /* contatct form */
+
+  .contact{
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
     flex-direction: column;
     align-items: center;
-  }
-
-  h1, h3{
-    text-align: center;
-    color: var(--secColor)
-  }
-
-  h1{
-    font-size: 500%;
-  }
-
-  s{
-    font-family: gotham_htfbook;
-    color: var(--accentColor);
-    text-decoration: none;
-    font-size: 50%;
-    position: relative;
-    top: -20%;
-  }
-  .winHead{
-    display: none;
-  }
-
-  #buttonDiv > h2{
-    font-size: 100%;
-    color: var(--accentColor);
-    font-family: gotham_htfbook;
-  }
-
-  .button{
-    background: var(--secColor);
-    color: #ffffff;
-    padding: 2.5%;
-    padding-left: 6vw;
-    padding-right: 6vw;
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 30px;
-    font-size: 200%;
-    box-sizing: border-box;
-    box-shadow: 6px 6px 0px var(--accentColor);
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
-  }
-
-  .button:hover{
-    background: var(--accentColor);
-    box-shadow: 6px 6px 0px var(--secColor);
-    font-size: 210%;
-    padding-top: 2.6%;
-    padding-bottom: 2.6%;
-    padding-left: 6.1vw;
-    padding-right: 6.1vw;
-  }
-
-  #noSelection{
-    user-select: none;
-  }
-
-  .download-guide{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 5%;
     width: 100%;
-    height: 50vh;
+    margin-bottom: 3%;
   }
 
-  .guideCard{
-    text-align: left;
+  .contact > h1{
+    font-size: 300%;
     color: var(--secColor);
-    /* border: black 5px solid; */
-    width: 20%;
-    height: auto;
-    padding: 2.5%;
-    background-color: white;
-    border-radius: 15px;
-    border: 5px var(--mainColor2);
-    border-style: dotted;
-    /* box-shadow: 0px 0px 50px white; */
-    font-family: gotham_htfbook;
   }
 
+  .contactForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-  .warningPicture{
-    width: 100%;
-    height: 75%;
-    background-image: url("../src/popUpWarning.png");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: contain;
-  }
-
-  .setupPicture{
-    width: 75%;
-    height: 75%;
-    background-image: url("../src/setup.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-  }
-
-  .installPicture{
-    width: 75%;
-    height: 75%;
-    background-image: url("../src/install.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-  }
-
-  .guideCardHead{
-    font-size: 150%;
-    font-family: gotham_blackregular;
-  }
-
-  /* #guideCardOne{
     background-color: var(--mainColor2);
+    padding: 3%;
+    border-radius: 5vh;
+
+    border-style: solid;
+    border-width: 10px;
+    border-color: var(--mainColor);
   }
 
-  #guideCardTwo{
-    background-color: var(--accentColor);
-  }
-
-  #guideCardThree{
-    background-color: var(--mainColor);
-  } */
-
-  .paragraph2{
-    background-color: #ffffff;
-    width: 100vw;
-    display: flex;
-    justify-content: space-around;
-    z-index: 3;
-  }
-
-  .paragraph2 > img{
-    box-shadow: 15px 15px 15px rgba(29, 29, 27, 0.1);
-    width: 50vh;
-    height: auto;
-    margin-bottom: 5%;
-  }
-
-  .paragraph2 > p{
-    margin: 10vh;
-    font-size: 175%;
-    color: var(--secColor);
-    font-family: gotham_htfbook;
-    text-align: center;
-  }
-
-  .paragraph2 > p > b{
-    margin: 1vh;
-    font-size: 175%;
-    /* border-right: solid 5px var(--accentColor); */
-    font-family: gotham_blackregular;
-  }
-
-  .paragraph2 > p > a{
-    color: var(--accentColor);
-    font-family: gotham_htfbook;
-    font-size: 100%;
-  }
-
-  .paragraph2 > p > em{
-    font-style: normal;
-    color: var(--mainColor);
-    -webkit-transition: 0.2s;
-  }
-
-  .paragraph2 > p > em:active{
-    -webkit-transition: 0.2s;
-    animation: changeAnimation 15s;
-  }
-
-  @keyframes changeAnimation{
-    0%{font-size: 100%;}
-    5%{font-size: 300%;}
-    100%{font-size: 1500%; color: var(--mainColor);}
-  }
-
-  /* iframe{
-    border-style: dashed;
-    border-color: var(--accentColor);
-    border-width: 5px;
-    width: 30vw;
-    height: 28vh;
-  } */
-
-
-  .upperDivSite{
-    position: absolute;
-    top: -0.025%;
-    left: -0.025%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .newsLetter{
-    margin-top: 7.5%;
-    margin-bottom: 2.5%;
-    width: 60%;
-    /* border-style: dashed;
-    border-width: 5px;
-    border-color: var(--accentColor);
-    background-color: #ffffff; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--accentColor);
-    border-radius: 15px;
-    box-shadow: 15px 15px 0px rgba(29, 29, 27, 0.1);
-  }
-
-  .form-group{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  input, textarea{
-    height: 10%;
-    width: 80%;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-    border-style: none;
-    text-align: left;
-    margin: 0.5vh;
-    outline: none;
+  .contactForm > textarea, .contactForm > input{
+    width: 100%;
+    padding: 2%;
+    border: None;
+    border-radius: 0.5vh;
     font-family: gotham_htfbook;
   }
-  button{
-    height: 10%;
-    width: 80%;
+
+  .contactForm > textarea:focus, .contactForm > input:focus{
+    border: solid var(--mainColor) 2px;
+  }
+
+
+  .contactForm > button{
     padding: 1vh;
-    margin-top: 1vh;
-    background-color: white;
-    border-width: 0;
-    border-radius: 10px;
-    margin-bottom: 2vh;
-    color: white;
     background-color: var(--secColor);
-    user-select: none;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
+    color: #ffffff;
+    width: 100%;
+    border-radius: 1vh;
+    border: None;
   }
 
-  button:hover{
+  .contactForm > button:hover{
+    -webkit-transition: 0.5s;
+    background-color: #ffffff;
     color: var(--secColor);
-    background-color: white;
   }
 
-  .form-group > p{
-    font-family: gotham_htfbook;
-    font-size: 150%;
-    color: white;
-  }
-
-  #formNewsletter{
-    width: 100%;
-  }
-  .feedback{
-    text-align: center;
-    padding-bottom: 5vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background-color: white;
-    border-top: 5px dotted var(--mainColor);
-  }
-
-  .feedback > h1{
-    font-size: 500%;
+  .contactForm > h1{
+    font-size: 200%;
     color: var(--mainColor);
-    background-color: white;
-    width: 100%;
+  }
+
+  .contactForm > *{
+    padding: 1%;
+    margin: 1%;
   }
 
   textarea{
     resize: vertical;
-    font-size: 100%;
-    font-family: gotham_htfbook;
-
-  }
-
-  .feedbackForm{
-    width: 60%;
-    background-color: var(--mainColor2);
-    padding: 5vh;
-    border-radius: 5vh;
-    box-shadow: 10px 10px 0px rgba(29, 29, 27, 0.1);
-  }
-
-  .feedbackForm > button{
-    padding: 2vh;
   }
 
   .footer{
@@ -496,7 +188,7 @@ body{
 
   .contactMail > a:hover ,.contactMail > a:focus{
     border: none;
-    color: var(--mainColor);
+    color: var(--mainColor)
   }
 
   .contactMail > h1, .contactMail > a{
