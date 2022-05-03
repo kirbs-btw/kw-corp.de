@@ -104,6 +104,17 @@ body{
     color: var(--accentColor);
   }
 
+  /* about us section */
+
+  .about_us_div{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about_us_div > p{
+    font-family: gotham_htfbook;
+  }
+
   /* contatct form */
 
   .contact{
