@@ -101,17 +101,60 @@
       color: var(--accentColor);
     }
 
+    .about_us_div{
+      width: 90%;
+    }
+
+    .about_us_div > p{
+      font-family: gotham_htfbook;
+    }
+
     .contact{
-      width: 100%;
+      width: 90%;
       display: flex;
       flex-direction: column;
       text-align: center;
-      border: solid 1px black;
+      margin-bottom: 3%;
     }
 
     .contactForm{
       display: flex;
       flex-direction: column;
+      background: var(--mainColor2);
+      border: solid var(--mainColor) 5px;
+      padding: 3vh;
+      border-radius: 1vh;
+    }
+
+    .contactForm > *{
+      margin: 1%;
+    }
+
+    .contactForm > h1{
+      color: #ffffff;
+      font-size: 175%;
+    }
+
+    .contactForm > input, .contactForm > textarea, .contactForm > button{
+      font-family: gotham_htfbook;
+      padding: 1vh;
+      border-radius: 1vh;
+      border: None;
+    }
+
+    .contactForm > textarea:focus, .contactForm > input:focus{
+      border: solid var(--mainColor) 2px;
+    }
+
+    .contactForm > button{
+      background: var(--secColor);
+      color: #ffffff;
+    }
+
+    .contactForm > button:hover{
+      -webkit-transition: 0.5s;
+      background: #ffffff;
+      color: var(--secColor);
     }
 
     textarea{
