@@ -1,0 +1,65 @@
+:root{
+    --secColor: #1d1d1d;
+    --mainColor: #59a1d9;
+    --accentColor: #ea498b;
+    --mainColor2: #a2d7e5;
+    --mainColorrgba: rgba(89, 161, 217, 1);
+    --accentColorrgba : rgba(234, 73, 139, 0.8);
+    --darksec: #5584c3;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.nav-section{
+  width: 100%;
+  background-color: red;
+}
+
+.program-section{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* footer */
+.footer-section > .fa{
+  font-size: 40px;
+  padding: 2vh;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10%;
+  margin: 1vh;
+}
+
+.fa:hover {
+    opacity: 0.9;
+}
+
+.fa-twitter{
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram{
+  background: #d12e75;
+  color: white;
+}
+
+.fa-github{
+  background: #161b22;
+  color: white;
+}
+
+
+.footer-section{
+  width: 100%;
+  border-top: var(--accentColor) 5px solid;
+}
