@@ -15,11 +15,46 @@ body{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-family: Gotham Black;
+}
+
+
+.nav-item-link{
+  font-size: 5vh;
+  text-decoration: none;
+  color: var(--secColor);
+  margin: 3vh;
+}
+
+.nav-item-link:hover{
+  color: var(--accentColor);
 }
 
 .nav-section{
   width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: var(--mainColor) solid 5px;
+}
+
+
+.program-picture{
+  width: 20vw;
+  height: 20vw;
   background-color: red;
+}
+
+.program-description{
+  width: 30vw;
+}
+
+.program-tile{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 3vh;
+  padding-top: 3vh;
+  border-bottom: var(--mainColor) 1px solid;
 }
 
 .program-section{
