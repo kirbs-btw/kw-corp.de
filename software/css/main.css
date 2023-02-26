@@ -1,3 +1,19 @@
+@font-face {
+    font-family: 'gotham_blackregular';
+    src: url('../../font/gotham_black_regular-webfont.woff2') format('woff2'),
+         url('../../font/gotham_black_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'gotham_htfbook';
+  src: url('../../font/gothamhtf-book-webfont.woff2') format('woff2'),
+       url('../../font/gothamhtf-book-webfont.woff') format('woff');
+  font-weight: lighter;
+  font-style: normal;
+}
+
 :root{
     --secColor: #1d1d1d;
     --mainColor: #59a1d9;
@@ -15,7 +31,7 @@ body{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: Gotham Black;
+  font-family: gotham_blackregular;
 }
 
 
@@ -37,24 +53,39 @@ body{
   border-bottom: var(--mainColor) solid 5px;
 }
 
+.youtube-downloader-picture{
+  background-image: url(../pictures/youtube_downloader_picture.png);
+  background-size: cover;
+}
+
+.system-sort-picture{
+  background-image: url(../pictures/system_sort_picture.png);
+  background-size: cover;
+}
+
 
 .program-picture{
   width: 20vw;
   height: 20vw;
-  background-color: red;
+  margin-right: 3vh;
 }
 
 .program-description{
   width: 30vw;
+  font-family: gotham_htfbook;
 }
 
 .program-tile{
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding-bottom: 3vh;
   padding-top: 3vh;
-  border-bottom: var(--mainColor) 1px solid;
+  border-bottom: var(--accentColor) 3px dashed;
+}
+
+.system-sort-section{
+  border: none;
 }
 
 .program-section{
