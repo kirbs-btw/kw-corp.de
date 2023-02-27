@@ -75,6 +75,36 @@ body{
   font-family: gotham_htfbook;
 }
 
+.download-program-button{
+  font-family: gotham_blackregular;
+  border: none;
+  background: var(--secColor);
+  color: #ffffff;
+  padding: 2.5%;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 2vh;
+  font-size: 200%;
+  box-sizing: border-box;
+  box-shadow: 6px 6px 0px var(--accentColor);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.download-program-button:hover{
+  background: var(--accentColor);
+  box-shadow: 6px 6px 0px var(--secColor);
+  font-size: 210%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  padding-left: 6vw;
+  padding-right: 6vw;
+}
+
+
 .program-tile{
   width: 100%;
   display: flex;
